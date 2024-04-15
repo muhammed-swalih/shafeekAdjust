@@ -20,7 +20,7 @@ function ThekkadyResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/thekkady');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/thekkady');
         setResort(response.data)
         console.log(response.data);
     }

@@ -14,7 +14,7 @@ function AlleppeyDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getalleppey/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getalleppey/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

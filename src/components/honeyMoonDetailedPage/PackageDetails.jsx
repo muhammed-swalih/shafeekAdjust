@@ -12,7 +12,7 @@ function PackageDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/gethoneymoon/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/gethoneymoon/${id}`)
             .then(response => {
                 setDetails(response.data)
                 console.log(details);

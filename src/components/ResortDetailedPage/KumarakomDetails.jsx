@@ -14,7 +14,7 @@ function KumarakomDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getkumarakom/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getkumarakom/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

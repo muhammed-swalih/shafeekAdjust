@@ -14,7 +14,7 @@ function PackageList() {
 
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/holiday');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/holiday');
         setImage(response.data)
         console.log(response.data);
     }

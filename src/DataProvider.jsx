@@ -33,7 +33,7 @@ function DataProvider({ children }) {
       }
     
 
-    fetch('https://trekfinale.onrender.com/packages/trivandrum')
+    fetch('http://easytuitionapi.cloud/packages/trivandrum')
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -57,7 +57,7 @@ function DataProvider({ children }) {
       }
     
 
-    fetch('https://trekfinale.onrender.com/packages/kumarakom')
+    fetch('http://easytuitionapi.cloud/packages/kumarakom')
       .then(response => response.json())
       .then(data => {
         setKumar(data);
@@ -83,7 +83,7 @@ function DataProvider({ children }) {
       }
     
 
-    fetch('https://trekfinale.onrender.com/packages/alleppey')
+    fetch('http://easytuitionapi.cloud/packages/alleppey')
       .then(response => response.json())
       .then(data => {
         setAlp(data);

@@ -13,7 +13,7 @@ function KochiDetails() {
     const [details, setDetails] = useState([])
     const [base, setBase] = useState()
     const getDetails = () => {
-      axios(`https://trekfinale.onrender.com/packages/getKochi/${id}`)
+      axios(`http://easytuitionapi.cloud/packages/getKochi/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

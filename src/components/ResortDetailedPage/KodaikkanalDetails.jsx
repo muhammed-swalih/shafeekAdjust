@@ -14,7 +14,7 @@ function KodaikkanalDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getkodaikkanal/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getkodaikkanal/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

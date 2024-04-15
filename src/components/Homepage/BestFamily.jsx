@@ -9,7 +9,7 @@ function BestFamily() {
     const navigate = useNavigate()
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/family');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/family');
         setImage(response.data)
         console.log(response.data);
     }

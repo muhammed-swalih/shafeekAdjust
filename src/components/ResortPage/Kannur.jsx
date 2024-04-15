@@ -20,7 +20,7 @@ function KannurResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/kannur');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/kannur');
         setResort(response.data)
         console.log(response.data);
     }

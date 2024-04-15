@@ -20,7 +20,7 @@ function VagamonResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/vagamon');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/vagamon');
         setResort(response.data)
         console.log(response.data);
     }

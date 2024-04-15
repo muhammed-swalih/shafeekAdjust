@@ -14,7 +14,7 @@ function MunnarDetails() {
   const [base, setBase] = useState()
   const getDetails = () => {
 
-    axios(`https://trekfinale.onrender.com/packages/getmunnar/${id}`)
+    axios(`http://easytuitionapi.cloud/packages/getmunnar/${id}`)
       .then(response => {
         setDetails(response.data)
         const base64String = btoa(

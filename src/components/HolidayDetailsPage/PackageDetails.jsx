@@ -12,7 +12,7 @@ function PackageDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getholiday/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getholiday/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

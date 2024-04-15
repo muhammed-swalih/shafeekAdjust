@@ -14,7 +14,7 @@ function CalicutDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getcalicut/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getcalicut/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

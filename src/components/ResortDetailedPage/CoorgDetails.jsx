@@ -14,7 +14,7 @@ function CoorgDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getcoorg/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getcoorg/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

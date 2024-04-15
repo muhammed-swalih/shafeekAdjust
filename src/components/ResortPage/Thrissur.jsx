@@ -20,7 +20,7 @@ function ThrissurResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/thrissur');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/thrissur');
         setResort(response.data)
         console.log(response.data);
     }

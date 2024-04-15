@@ -14,7 +14,7 @@ function TrivandrumDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/gettrivandrum/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/gettrivandrum/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

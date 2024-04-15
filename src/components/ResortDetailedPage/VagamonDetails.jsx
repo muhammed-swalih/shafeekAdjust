@@ -14,7 +14,7 @@ function VagamonDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`https://trekfinale.onrender.com/packages/getvagamon/${id}`)
+        axios(`http://easytuitionapi.cloud/packages/getvagamon/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

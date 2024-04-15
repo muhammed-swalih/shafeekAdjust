@@ -14,7 +14,7 @@ function MalappuramDetails() {
   const [base, setBase] = useState()
   const getDetails = () => {
 
-    axios(`https://trekfinale.onrender.com/packages/getmalappuram/${id}`)
+    axios(`http://easytuitionapi.cloud/packages/getmalappuram/${id}`)
       .then(response => {
         setDetails(response.data)
         const base64String = btoa(

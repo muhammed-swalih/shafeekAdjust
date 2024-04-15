@@ -9,7 +9,7 @@ function BestHoneymoon() {
     const navigate = useNavigate()
     const [image, setImage] = useState([])
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('https://trekfinale.onrender.com/packages/honeymoon');
+        const response = await axios.get('http://easytuitionapi.cloud/packages/honeymoon');
         setImage(response.data)
         console.log(response.data);
     }

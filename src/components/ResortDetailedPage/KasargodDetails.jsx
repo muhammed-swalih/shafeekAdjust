@@ -14,7 +14,7 @@ function KasargodDetails() {
   const [base, setBase] = useState()
   const getDetails = () => {
 
-    axios(`https://trekfinale.onrender.com/packages/getkasargod/${id}`)
+    axios(`http://easytuitionapi.cloud/packages/getkasargod/${id}`)
       .then(response => {
         setDetails(response.data)
         const base64String = btoa(
