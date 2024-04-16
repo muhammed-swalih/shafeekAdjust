@@ -14,7 +14,7 @@ function KannurDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getKannur/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getKannur/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

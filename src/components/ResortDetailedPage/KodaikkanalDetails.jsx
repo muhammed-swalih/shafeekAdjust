@@ -14,7 +14,7 @@ function KodaikkanalDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getkodaikkanal/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getkodaikkanal/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

@@ -20,7 +20,7 @@ function OotyResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/ooty');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/ooty');
         setResort(response.data)
         console.log(response.data);
     }

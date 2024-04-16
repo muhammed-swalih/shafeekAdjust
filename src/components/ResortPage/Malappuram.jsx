@@ -20,7 +20,7 @@ function MalappuramResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/malappuram');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/malappuram');
         setResort(response.data)
         console.log(response.data);
     }

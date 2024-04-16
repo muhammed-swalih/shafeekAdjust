@@ -14,7 +14,7 @@ function MunnarDetails() {
   const [base, setBase] = useState()
   const getDetails = () => {
 
-    axios(`http://easytuitionapi.cloud/packages/getmunnar/${id}`)
+    axios(`https://easytuitionapi.cloud/packages/getmunnar/${id}`)
       .then(response => {
         setDetails(response.data)
         const base64String = btoa(

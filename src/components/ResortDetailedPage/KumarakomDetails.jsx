@@ -14,7 +14,7 @@ function KumarakomDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getkumarakom/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getkumarakom/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

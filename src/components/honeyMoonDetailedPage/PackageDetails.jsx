@@ -12,7 +12,7 @@ function PackageDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/gethoneymoon/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/gethoneymoon/${id}`)
             .then(response => {
                 setDetails(response.data)
                 console.log(details);

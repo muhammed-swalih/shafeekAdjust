@@ -20,7 +20,7 @@ function MunnarResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/munnar');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/munnar');
         setResort(response.data)
         console.log(response.data);
     }

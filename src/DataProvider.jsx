@@ -33,7 +33,7 @@ function DataProvider({ children }) {
       }
     
 
-    fetch('http://easytuitionapi.cloud/packages/trivandrum')
+    fetch('https://easytuitionapi.cloud/packages/trivandrum')
       .then(response => response.json())
       .then(data => {
         setData(data);
@@ -57,7 +57,7 @@ function DataProvider({ children }) {
       }
     
 
-    fetch('http://easytuitionapi.cloud/packages/kumarakom')
+    fetch('https://easytuitionapi.cloud/packages/kumarakom')
       .then(response => response.json())
       .then(data => {
         setKumar(data);
@@ -83,7 +83,7 @@ function DataProvider({ children }) {
       }
     
 
-    fetch('http://easytuitionapi.cloud/packages/alleppey')
+    fetch('https://easytuitionapi.cloud/packages/alleppey')
       .then(response => response.json())
       .then(data => {
         setAlp(data);

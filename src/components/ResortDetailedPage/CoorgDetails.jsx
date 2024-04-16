@@ -14,7 +14,7 @@ function CoorgDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getcoorg/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getcoorg/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

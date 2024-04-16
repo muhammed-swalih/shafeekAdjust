@@ -14,7 +14,7 @@ function KasargodDetails() {
   const [base, setBase] = useState()
   const getDetails = () => {
 
-    axios(`http://easytuitionapi.cloud/packages/getkasargod/${id}`)
+    axios(`https://easytuitionapi.cloud/packages/getkasargod/${id}`)
       .then(response => {
         setDetails(response.data)
         const base64String = btoa(

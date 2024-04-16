@@ -14,7 +14,7 @@ function ThekkadyDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getthekkady/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getthekkady/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

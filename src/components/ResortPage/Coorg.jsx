@@ -20,7 +20,7 @@ function CoorgResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/coorg');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/coorg');
         setResort(response.data)
         console.log(response.data);
     }

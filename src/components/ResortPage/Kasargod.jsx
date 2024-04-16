@@ -20,7 +20,7 @@ function KasargodResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/kasargod');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/kasargod');
         setResort(response.data)
         console.log(response.data);
     }

@@ -14,7 +14,7 @@ function TrivandrumDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/gettrivandrum/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/gettrivandrum/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

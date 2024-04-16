@@ -14,7 +14,7 @@ function CalicutDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getcalicut/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getcalicut/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

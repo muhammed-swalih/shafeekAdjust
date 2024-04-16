@@ -20,7 +20,7 @@ function CalicutResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/calicut');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/calicut');
         setResort(response.data)
         console.log(response.data);
     }

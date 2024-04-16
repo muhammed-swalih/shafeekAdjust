@@ -20,7 +20,7 @@ function ThrissurResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/thrissur');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/thrissur');
         setResort(response.data)
         console.log(response.data);
     }

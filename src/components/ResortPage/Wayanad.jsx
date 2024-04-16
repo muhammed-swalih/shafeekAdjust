@@ -26,7 +26,7 @@ function WayanadResorts() {
 
   const fetchHoneyMoonPackage = async () => {
     const response = await axios.get(
-      "http://easytuitionapi.cloud/packages/wayanad"
+      "https://easytuitionapi.cloud/packages/wayanad"
     );
     setResort(response.data);
     console.log(response.data);

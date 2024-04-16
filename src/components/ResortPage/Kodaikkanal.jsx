@@ -20,7 +20,7 @@ function KodaikkanalResorts() {
     }
 
     const fetchHoneyMoonPackage = async () => {
-        const response = await axios.get('http://easytuitionapi.cloud/packages/kodaikkanal');
+        const response = await axios.get('https://easytuitionapi.cloud/packages/kodaikkanal');
         setResort(response.data)
         console.log(response.data);
     }

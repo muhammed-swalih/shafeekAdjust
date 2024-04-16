@@ -14,7 +14,7 @@ function ThrissurDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getthrissur/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getthrissur/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(

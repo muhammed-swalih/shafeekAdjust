@@ -14,7 +14,7 @@ function VagamonDetails() {
     const [base, setBase] = useState()
     const getDetails = () => {
 
-        axios(`http://easytuitionapi.cloud/packages/getvagamon/${id}`)
+        axios(`https://easytuitionapi.cloud/packages/getvagamon/${id}`)
             .then(response => {
                 setDetails(response.data)
                 const base64String = btoa(
